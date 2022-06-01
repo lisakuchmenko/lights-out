@@ -84,8 +84,11 @@ class Board extends Component {
 	render() {
 		return (
 			<div>
+				<div className='boardTitle'>
+					<h1 className='wonText'>Lights Out</h1>
+				</div>
 				{this.state.hasWon ? (
-					<h1>You have won</h1>
+					<div className='wonText'>You won!</div>
 				) : (
 					<div>{this.renderTable()}</div>
 				)}
